@@ -56,7 +56,7 @@ if test ! $(which brew); then
 
 # Use the newest version of bash, from Homebrew
 BASHPATH=$(brew --prefix)/bin/bash
-sudo echo $BASHPATH >> /etc/shells
+sudo echo $BASHPATH >> /etc/shells # Note - El Capitan fights this, had to do it manually
 chsh -s $BASHPATH # will set for current user only.
 echo $BASH_VERSION # should be 4.x not the old 3.2.X
 

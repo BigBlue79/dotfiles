@@ -4,6 +4,7 @@ brew install ack
 brew install bash
 brew install git-open
 brew install imagemagick --with-webp
+brew install mitmproxy
 brew install node
 brew install redis
 brew install tmux
