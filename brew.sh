@@ -6,6 +6,7 @@ brew install git-open
 brew install imagemagick --with-webp
 brew install mitmproxy
 brew install node
+brew install rbenv
 brew install redis
 brew install tmux
 brew install trash
@@ -16,5 +17,8 @@ brew install z
 
 brew tap homebrew/versions
 brew install bash-completion2
+
+## Install ruby-build as an rbenv plugin
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 brew cleanup
