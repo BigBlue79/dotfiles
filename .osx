@@ -23,7 +23,7 @@ sudo pmset -a sms 0
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set super-short keyboard delay
-defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225 ms)
 
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
