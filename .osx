@@ -34,6 +34,12 @@ defaults write com.apple.Finder AppleShowAllFiles -bool true
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
+# Show Path bar in Finder ##TODO
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Show Status bar in Finder #TODO
+defaults write com.apple.finder ShowStatusBar -bool true
+
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
