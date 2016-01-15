@@ -9,7 +9,6 @@
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
-brew cask install adium
 brew cask install alfred
 brew cask install caffeine
 brew cask install cheatsheet
