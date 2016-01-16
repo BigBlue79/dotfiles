@@ -28,6 +28,7 @@ brew cask install rescuetime
 brew cask install slack
 brew cask install spectacle
 brew cask install sublime-text
+brew cask install the-unarchiver
 brew cask install utorrent
 brew cask install vagrant
 brew cask install virtualbox
