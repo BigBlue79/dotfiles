@@ -6,6 +6,7 @@ brew install git-open
 brew install imagemagick --with-webp
 brew install mitmproxy
 brew install node
+brew install pow
 brew install rbenv
 brew install redis
 brew install tmux
