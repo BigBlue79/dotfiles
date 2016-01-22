@@ -27,6 +27,7 @@ brew cask install macdown
 brew cask install rescuetime
 brew cask install slack
 brew cask install spectacle
+brew cask install sourcetree
 brew cask install sublime-text
 brew cask install the-unarchiver
 brew cask install utorrent
