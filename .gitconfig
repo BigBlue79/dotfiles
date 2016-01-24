@@ -1,0 +1,59 @@
+[alias]
+  c = commit -am
+  up = pull
+  p = push
+  s = status -s
+  df = diff --color --color-words --abbrev
+  lg = log --oneline --decorate --graph
+  st = status
+  ci = commit
+  unstage = reset HEAD --
+  co = checkout
+[color]
+  ui = true
+[core]
+  excludesfile = /Users/adamj/.gitignore
+  attributesfile = ~/.gitattributes
+  pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less #Only with homebrew git, obvi
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[merge]
+  log = true
+[url "git@github.com:"]
+  insteadOf = "gh:"
+  pushInsteadOf = "github:"
+  pushInsteadOf = "git://github.com/"
+[url "git://github.com/"]
+  insteadOf = "github:"
+[url "git@gist.github.com:"]
+  insteadOf = "gst:"
+  pushInsteadOf = "gist:"
+  pushInsteadOf = "git://gist.github.com/"
+[url "git://gist.github.com/"]
+  insteadOf = "gist:"
+
+# Any GitHub repo with my username should be checked out r/w by default
+# http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
+[url "git@github.com:paulirish/"]
+  insteadOf = "git://github.com/paulirish/"
+[user]
+  email = adam.jasiura@gmail.com
+[push]
+  default = current
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+[mergetool "sourcetree"]
+  cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.1/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true

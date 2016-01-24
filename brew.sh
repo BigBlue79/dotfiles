@@ -2,6 +2,7 @@ brew update
 
 brew install ack
 brew install bash
+brew install git
 brew install git-open
 brew install imagemagick --with-webp
 brew install mitmproxy
