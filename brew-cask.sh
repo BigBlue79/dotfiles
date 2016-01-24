@@ -20,8 +20,8 @@ brew cask install fantastical
 brew cask install firefox-nightly
 brew cask install flux
 brew cask install google-chrome
-brew cask install gyazo
 brew cask install iterm2
+brew cask install licecap
 brew cask install macdown
 brew cask install rescuetime
 brew cask install slack
