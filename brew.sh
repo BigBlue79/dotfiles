@@ -14,6 +14,7 @@ brew install tmux
 brew install trash
 brew install tree
 brew install v8
+brew install wifi-password
 brew install wget --with-iri
 brew install z
 
