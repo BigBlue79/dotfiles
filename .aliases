@@ -1,2 +1,2 @@
-alias be="bundle exec "
+alias bex="bundle exec "
 alias ll="ls -alh"
