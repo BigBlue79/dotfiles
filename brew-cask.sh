@@ -10,6 +10,7 @@ brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
 brew cask install alfred
+brew cask install anki
 brew cask install caffeine
 brew cask install cheatsheet
 brew cask install cyberduck
