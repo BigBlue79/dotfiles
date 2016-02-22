@@ -28,11 +28,13 @@ brew cask install rescuetime
 brew cask install slack
 brew cask install spectacle
 brew cask install sourcetree
-brew cask install sublime-text
+brew cask install sublime-text3
 brew cask install the-unarchiver
 brew cask install utorrent
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
+
+ln -sf /opt/homebrew-cask/Caskroom/sublime-text3/3103/Sublime\ Text.app/Contents/SharedSupport/bin/subl  /usr/local/bin/subl
 
 ## Other installs to do manually - popclip, scapple
