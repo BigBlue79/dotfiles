@@ -5,6 +5,7 @@ brew install bash
 brew install git
 brew install git-open
 brew install imagemagick --with-webp
+brew install lastpass-cli
 brew install mitmproxy
 brew install node
 brew install pow
