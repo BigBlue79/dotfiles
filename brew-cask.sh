@@ -15,6 +15,7 @@ brew cask install caffeine
 brew cask install cheatsheet
 brew cask install cyberduck
 brew cask install dash
+brew cask install dayone-cli
 brew cask install dropbox
 brew cask install evernote
 brew cask install fantastical
