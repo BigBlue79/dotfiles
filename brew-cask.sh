@@ -37,6 +37,6 @@ brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
 
-ln -sf /opt/homebrew-cask/Caskroom/sublime-text3/3103/Sublime\ Text.app/Contents/SharedSupport/bin/subl  /usr/local/bin/subl
+ln -sf /usr/local/Caskroom/sublime-text3/3103/Sublime\ Text.app/Contents/SharedSupport/bin/subl  /usr/local/bin/subl
 
 ## Other installs to do manually - popclip, scapple
