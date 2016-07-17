@@ -1,6 +1,7 @@
 brew update
 
 brew install ack
+brew install ag
 brew install bash
 brew install git
 brew install git-open

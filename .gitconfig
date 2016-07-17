@@ -15,6 +15,7 @@
 	excludesfile = /Users/adam/.gitignore_global
   attributesfile = ~/.gitattributes
   pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less #Only with homebrew git, obvi
+	editor = /usr/bin/vim
 [color "branch"]
   current = yellow reverse
   local = yellow
