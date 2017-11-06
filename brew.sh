@@ -3,6 +3,7 @@ brew update
 brew install ack
 brew install ag
 brew install bash
+brew install fzf
 brew install git
 brew install git-open
 brew install imagemagick --with-webp
@@ -12,15 +13,14 @@ brew install node
 brew install pow
 brew install rbenv
 brew install redis
+brew install ripgrep
 brew install tmux
 brew install trash
 brew install tree
 brew install v8
-brew install wifi-password
 brew install wget --with-iri
+brew install wifi-password
 brew install z
-brew install fzf
-brew install ripgrep
 
 brew tap homebrew/versions
 brew install bash-completion2
