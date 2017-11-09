@@ -25,9 +25,9 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_HOME="/usr/local/opt/android-sdk"
 
-#bash-completion
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
+# More bash completion
+if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+  . $(brew --prefix)/share/bash-completion/bash_completion
 fi
 
 #history
@@ -44,6 +44,8 @@ if [ -f ~/.config/exercism/exercism_completion.bash ]; then
 fi
 
 # added by Anaconda3 4.4.0 installer
+# you might need to disable Anaconda to install some brew formulae, including vim
+# https://hashrocket.com/blog/posts/keep-anaconda-from-constricting-your-homebrew-installs
 export PATH="/Users/adam/anaconda/bin:$PATH"
 
 # fuzzy-find + ripgrep

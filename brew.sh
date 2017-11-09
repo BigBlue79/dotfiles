@@ -32,4 +32,8 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 brew tap eddieantonio/eddieantonio
 brew install imgcat
 
+echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
+# You might have to change the shell in iTerm2
+chsh -s /usr/local/bin/bash;
+
 brew cleanup
