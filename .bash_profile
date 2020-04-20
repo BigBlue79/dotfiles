@@ -25,30 +25,48 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_HOME="/usr/local/opt/android-sdk"
 
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+export ANDROID_AVD_HOME="$HOME/.android/avd"
+
 # More bash completion
 if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
   . $(brew --prefix)/share/bash-completion/bash_completion
 fi
 
 #history
+HISTIGNORE=ignoreboth
 HISTIGNORE='\&:fg:bg:pwd:cd ..:cd ~-:cd -:cd:jobs:set -x'
 HISTIGNORE=${HISTIGNORE}':%1:%2:shutdown*'
 export HISTIGNORE
 
-#rbenv shimmy
+#rbenv shims
 eval "$(rbenv init -)"
+
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
+
+#nodenv shims
+eval "$(nodenv init -)"
 
 # exercism autocomplete
 if [ -f ~/.config/exercism/exercism_completion.bash ]; then
   . ~/.config/exercism/exercism_completion.bash
 fi
 
-# added by Anaconda3 4.4.0 installer
-# you might need to disable Anaconda to install some brew formulae, including vim
-# https://hashrocket.com/blog/posts/keep-anaconda-from-constricting-your-homebrew-installs
-export PATH="/Users/adam/anaconda/bin:$PATH"
-
 # fuzzy-find + ripgrep
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow'
 
-export GOPATH=$HOME/code
+# export GOPATH=$HOME/code/go
+# export PATH=$PATH:$GO /bin
+
+export KIOSK_HOST='adam-kiosk.honkdev.com'
+export BANANA_KEYSTORE_PATH='~/code/honk/honkmobile.keystore'
+
+# Add the following to your .bash_profile or .bashrc file in order to switch to a different iTerm profile during an ssh session.
+# This same code could be re-purposed for any command, not just ssh
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+alias dcd="docker-compose -f docker-compose.yml -f docker/environments/docker-compose.development.yml"
+
+export VIMCONFIG=~/.vim
+export VIMDATA=~/.vim
