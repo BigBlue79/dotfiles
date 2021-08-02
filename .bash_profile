@@ -34,6 +34,8 @@ if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
   . $(brew --prefix)/share/bash-completion/bash_completion
 fi
 
+ [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
 #history
 HISTIGNORE=ignoreboth
 HISTIGNORE='\&:fg:bg:pwd:cd ..:cd ~-:cd -:cd:jobs:set -x'
@@ -70,3 +72,9 @@ alias dcd="docker-compose -f docker-compose.yml -f docker/environments/docker-co
 
 export VIMCONFIG=~/.vim
 export VIMDATA=~/.vim
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
