@@ -45,7 +45,7 @@ fi
 # Install Homebrew in the default location, unless it's there already
 if test ! $(which brew); then
     echo "Installing homebrew..."
-      ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
 
 ./brew.sh # Install a bunch of formulae
@@ -63,7 +63,3 @@ echo $BASH_VERSION # should be 4.x not the old 3.2.X
 
 ##############################################################################################################
 ### Misc
-
-
-# Sublime CLI setup
-ln -sf "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl

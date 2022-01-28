@@ -9,32 +9,27 @@
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
-brew cask install alfred
-brew cask install anki
-brew cask install caffeine
-brew cask install cheatsheet
-brew cask install cyberduck
-brew cask install dropbox
-brew cask install evernote
-brew cask install firefox-nightly
-brew cask install flux
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install iterm2
-brew cask install licecap
-brew cask install macdown
-brew cask install rectangle
-brew cask install slack
-brew cask install sourcetree
-brew cask install spotify
-brew cask install sublime-text3
-brew cask install the-unarchiver
-brew cask install transmission
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install vlc
-brew cask install openinterminal
+brew install alfred
+brew install anki
+brew install caffeine
+brew install cheatsheet
+brew install cyberduck
+brew install dropbox
+brew install evernote
+brew install firefox-nightly
+brew install flux
+brew install google-chrome
+brew install google-drive
+brew install iterm2
+brew install rectangle
+brew install slack
+brew install sourcetree
+brew install spotify
+brew install the-unarchiver
+brew install transmission
+brew install visual-studio-code
+brew install vlc
+brew install openinterminal
 
-ln -sf /usr/local/Caskroom/sublime-text3/3103/Sublime\ Text.app/Contents/SharedSupport/bin/subl  /usr/local/bin/subl
+# ln -sf /usr/local/Caskroom/sublime-text3/3103/Sublime\ Text.app/Contents/SharedSupport/bin/subl  /usr/local/bin/subl
 
-## Other installs to do manually - popclip, scapple
