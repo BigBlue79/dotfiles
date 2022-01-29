@@ -58,12 +58,6 @@ fi
 # fuzzy-find + ripgrep
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow'
 
-# export GOPATH=$HOME/code/go
-# export PATH=$PATH:$GO /bin
-
-export KIOSK_HOST='adam-kiosk.honkdev.com'
-export BANANA_KEYSTORE_PATH='~/code/honk/honkmobile.keystore'
-
 # Add the following to your .bash_profile or .bashrc file in order to switch to a different iTerm profile during an ssh session.
 # This same code could be re-purposed for any command, not just ssh
 

@@ -1,7 +1,5 @@
 brew update
 
-brew install ack
-brew install ag
 brew install bash
 brew install fzf
 brew install git
@@ -10,7 +8,6 @@ brew install imagemagick --with-webp
 brew install lastpass-cli
 brew install mitmproxy
 brew install node
-brew install pow
 brew install rbenv
 brew install redis
 brew install ripgrep

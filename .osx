@@ -11,7 +11,7 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 
 # Disable local Time Machine snapshots
-sudo tmutil disablelocal
+# sudo tmutil disablelocal
 
 # Disable hibernation (speeds up entering sleep mode)
 sudo pmset -a hibernatemode 0
@@ -49,10 +49,3 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Use list view in all Finder windows by default
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
-
-# Spectacle settings
-## Bonus - the script to get these:
-# for key in MakeLarger MakeSmaller MoveToBottomDisplay MoveToBottomHalf MoveToCenter MoveToFullscreen MoveToLeftDisplay MoveToLeftHalf MoveToLowerLeft MoveToLowerRight MoveToNextDisplay MoveToNextThird MoveToPreviousDisplay MoveToPreviousThird MoveToRightDisplay MoveToRightHalf MoveToTopDisplay MoveToTopHalf MoveToUpperLeft MoveToUpperRight RedoLastMove UndoLastMove; do
-#   printf "defaults write com.divisiblebyzero.Spectacle ${key} -data ";
-#   defaults read com.divisiblebyzero.Spectacle ${key} | sed 's/[^0-9a-f]//g';
-# done

@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# to maintain cask ....
-#     brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
-
-
 # Install native apps
 
 brew install caskroom/cask/brew-cask
@@ -14,6 +10,7 @@ brew install anki
 brew install caffeine
 brew install cheatsheet
 brew install cyberduck
+brew install --cask docker
 brew install dropbox
 brew install evernote
 brew install firefox-nightly
@@ -30,6 +27,3 @@ brew install transmission
 brew install visual-studio-code
 brew install vlc
 brew install openinterminal
-
-# ln -sf /usr/local/Caskroom/sublime-text3/3103/Sublime\ Text.app/Contents/SharedSupport/bin/subl  /usr/local/bin/subl
-
