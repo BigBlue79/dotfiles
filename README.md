@@ -1,2 +1,8 @@
 # dotfiles
-Just parking some dotfiles here.
+
+```
+./symlink-setup.sh
+./setup-a-new-mac
+source .osx
+sudo killall Finder
+```
