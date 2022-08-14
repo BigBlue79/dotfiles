@@ -53,7 +53,8 @@
 [user]
   email = adam.jasiura@gmail.com
 [push]
-  default = current
+  default = simple
+  autoSetupRemote = true
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
   path =
