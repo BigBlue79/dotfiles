@@ -48,10 +48,11 @@
 
 # Any GitHub repo with my username should be checked out r/w by default
 # http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
-[url "git@github.com:paulirish/"]
-  insteadOf = "git://github.com/paulirish/"
+[url "git@github.com:BigBlue79/"]
+  insteadOf = "git://github.com/BigBlue79/"
 [user]
   email = adam.jasiura@gmail.com
+	name = Adam Jasiura
 [push]
   default = simple
   autoSetupRemote = true
@@ -61,3 +62,5 @@
 [mergetool "sourcetree"]
   cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.1/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
   trustExitCode = true
+[init]
+	defaultBranch = main
