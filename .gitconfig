@@ -64,3 +64,5 @@
   trustExitCode = true
 [init]
 	defaultBranch = main
+[branch]
+  sort = -committerdate
