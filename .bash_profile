@@ -42,13 +42,7 @@ HISTIGNORE='\&:fg:bg:pwd:cd ..:cd ~-:cd -:cd:jobs:set -x'
 HISTIGNORE=${HISTIGNORE}':%1:%2:shutdown*'
 export HISTIGNORE
 
-#rbenv shims
-eval "$(rbenv init -)"
-
 export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
-
-#nodenv shims
-eval "$(nodenv init -)"
 
 # exercism autocomplete
 if [ -f ~/.config/exercism/exercism_completion.bash ]; then
@@ -62,13 +56,15 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden --follow'
 # This same code could be re-purposed for any command, not just ssh
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-alias dcd="docker-compose -f docker-compose.yml -f docker/environments/docker-compose.development.yml"
 
 export VIMCONFIG=~/.vim
 export VIMDATA=~/.vim
 
-export PATH="$HOME/.cargo/bin:$PATH"
 
 export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix golang)/libexec"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+. "$HOME/.cargo/env"
+
+. "/usr/local/opt/asdf/libexec/asdf.sh"
+. "/usr/local/opt/asdf/etc/bash_completion.d/asdf.bash"

@@ -1,5 +1,6 @@
 brew update
 
+brew install asdf
 brew install bash
 brew install fzf
 brew install git
@@ -7,8 +8,6 @@ brew install git-open
 brew install imagemagick --with-webp
 brew install lastpass-cli
 brew install mitmproxy
-brew install node
-brew install rbenv
 brew install redis
 brew install ripgrep
 brew install tmux
