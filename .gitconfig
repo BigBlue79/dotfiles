@@ -9,6 +9,7 @@
   ci = commit
   unstage = reset HEAD --
   co = checkout
+  fco = fuzzy-checkout
 [color]
   ui = true
 [core]

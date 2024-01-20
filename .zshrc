@@ -1,7 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -72,21 +70,17 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-
 plugins=(
-  bundler
+  fzf
   git
-  git-open
-  kube-ps1
-  macos
-  rake
-  ruby
+  kubectl
+  kubectx
+  minikube
+  ripgrep
   z
 )
 
 source $ZSH/oh-my-zsh.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # User configuration
 
@@ -113,15 +107,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-. ~/.aliases
-
-PROMPT='$(kube_ps1)'$PROMPT
-
-
-
-export CPATH=/opt/homebrew/include
-export LIBRARY_PATH=/opt/homebrew/lib
-
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
